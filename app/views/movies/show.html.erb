@@ -1,0 +1,15 @@
+<h1>Director Details</h1>
+<a href="http://localhost:3000/directors">Back</a>
+<a href="http://localhost:3000/directors/<%=@director.id %>/edit">Edit</a>
+<a href="http://localhost:3000/delete_director/<%=@director.id %>">Delete</a>
+<br>
+<br>
+<p><%= @director.name %></p>
+<img src="<%= @director.image_url %>" width="480">
+
+<p>
+  Date of birth: <%= @director.dob %>
+  <br>
+  <br>
+  <%= @director.bio %>
+</p>
